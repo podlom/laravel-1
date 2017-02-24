@@ -44,6 +44,7 @@ class IndexController extends Controller
     }
     public function add(){
         dump($this->header);
+        dump($this->message);
         return view('add-content')->with(['message'=>$this->message,
             'header'=>$this->header]);
     }
